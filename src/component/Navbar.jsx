@@ -12,6 +12,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </label>
+
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-3 shadow-lg bg-[#111827] text-white rounded-box w-52">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
@@ -21,31 +22,41 @@ const Navbar = () => {
             <li><Link className="btn bg-blue-600 text-white mt-2" to="/contact">Get Quote</Link></li>
           </ul>
         </div>
+
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Khan IT Solution" className="w-20 sm:w-24 md:w-28 lg:w-32 object-contain" />
         </Link>
       </div>
+
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-2 font-medium text-white">
           <li><Link to="/" className="hover:text-blue-400">Home</Link></li>
           <li><Link to="/about" className="hover:text-blue-400">About</Link></li>
+
           <li>
-            <details>
-              <summary className="hover:text-blue-400">Services</summary>
-              <ul className="p-3 bg-[#111827] text-white rounded-box shadow-lg w-64">
+            <div className="dropdown">
+              <label tabIndex={0} className="cursor-pointer hover:text-blue-400">
+                Services
+              </label>
+
+              <ul tabIndex={0} className="dropdown-content menu p-3 bg-[#111827] text-white rounded-box shadow-lg w-64 z-50">
                 <li><Link to="/services/web-development">Website Development</Link></li>
                 <li><Link to="/services/digital-marketing">Digital Marketing</Link></li>
                 <li><Link to="/services/business-transformation">Business Transformation</Link></li>
                 <li><Link to="/services/app-development">App Development</Link></li>
               </ul>
-            </details>
+            </div>
           </li>
+
           <li><Link to="/portfolio" className="hover:text-blue-400">Portfolio</Link></li>
           <li><Link to="/contact" className="hover:text-blue-400">Contact</Link></li>
         </ul>
       </div>
+
       <div className="navbar-end">
-        <Link to="/contact" className="btn bg-blue-600 hover:bg-blue-700 text-white border-none rounded-full px-4 text-sm md:text-base">Get Quote</Link>
+        <Link to="/contact" className="btn bg-blue-600 hover:bg-blue-700 text-white border-none rounded-full px-4 text-sm md:text-base">
+          Get Quote
+        </Link>
       </div>
     </div>
   );

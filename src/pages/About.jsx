@@ -1,41 +1,118 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
-    return (
-        <div>
-           <section className="dark:bg-gray-100 dark:text-gray-800">
-	<div className="container max-w-5xl px-4 py-12 mx-auto">
-		<div className="grid gap-4 mx-4 sm:grid-cols-12">
-			<div className="col-span-12 sm:col-span-3">
-				<div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-600">
-					<h3 className="text-3xl font-semibold">Morbi tempor</h3>
-					<span className="text-sm font-bold tracking-wider uppercase dark:text-gray-600">Vestibulum diam nunc</span>
-				</div>
-			</div>
-			<div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
-				<div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300">
-					<div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
-						<h3 className="text-xl font-semibold tracking-wide">Donec porta enim vel </h3>
-						<time className="text-xs tracking-wide uppercase dark:text-gray-600">Dec 2020</time>
-						<p className="mt-3">Pellentesque feugiat ante at nisl efficitur, in mollis orci scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-					</div>
-					<div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
-						<h3 className="text-xl font-semibold tracking-wide">Aliquam sit amet nunc ut</h3>
-						<time className="text-xs tracking-wide uppercase dark:text-gray-600">Jul 2019</time>
-						<p className="mt-3">Morbi vulputate aliquam libero non dictum. Aliquam sit amet nunc ut diam aliquet tincidunt nec nec dui. Donec mollis turpis eget egestas sodales.</p>
-					</div>
-					<div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
-						<h3 className="text-xl font-semibold tracking-wide">Pellentesque habitant morbi</h3>
-						<time className="text-xs tracking-wide uppercase dark:text-gray-600">Jan 2016</time>
-						<p className="mt-3">Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula felis id, vehicula enim.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+  const journey = [
+    {
+      title: "Understand",
+      text: "We understand your business goals and identify the right digital solutions."
+    },
+    {
+      title: "Create",
+      text: "We design and develop creative solutions that improve your online presence."
+    },
+    {
+      title: "Support",
+      text: "We provide continuous support to help your business grow successfully."
+    }
+  ];
+
+  const values = [
+    {
+      title: "Mission",
+      text: "Deliver reliable digital solutions that help businesses grow in the modern world."
+    },
+    {
+      title: "Vision",
+      text: "Become a trusted technology partner for businesses seeking digital transformation."
+    },
+    {
+      title: "Values",
+      text: "Innovation, quality, transparency and long-term customer relationships."
+    }
+  ];
+
+  return (
+    <section className="bg-white text-[#111827] py-14 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <div className="text-center max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold">
+            About <span className="text-blue-600">Khan IT Solution</span>
+          </h1>
+
+          <p className="mt-5 text-gray-600 text-lg">
+            We provide modern digital solutions to help businesses build,
+            grow and succeed online.
+          </p>
         </div>
-    );
+
+        <div className="grid lg:grid-cols-2 gap-10 mt-14 items-center">
+
+          <div className="bg-gray-50 rounded-3xl p-8 border border-gray-100">
+            <h2 className="text-3xl font-bold">
+              Who We Are
+            </h2>
+
+            <p className="mt-5 text-gray-600 leading-relaxed">
+              Khan IT Solution is a digital service company focused on website
+              development, digital marketing, business transformation and
+              mobile application solutions.
+            </p>
+
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              We combine creativity, technology and strategy to create digital
+              solutions that bring real value to businesses.
+            </p>
+
+            <button className="mt-6 btn bg-blue-600 hover:bg-blue-700 text-white border-none rounded-full px-7">
+              Learn More
+            </button>
+          </div>
+
+          <div className="space-y-6">
+            {journey.map((item, index) => (
+              <div key={index} className="flex gap-5 items-start">
+                <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
+                  {index + 1}
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-2 text-gray-600">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 mt-16">
+
+          {values.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl p-7 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition"
+            >
+              <h3 className="text-2xl font-bold text-blue-600">
+                {item.title}
+              </h3>
+
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                {item.text}
+              </p>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+    </section>
+  );
 };
 
 export default About;
