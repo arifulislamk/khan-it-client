@@ -41,8 +41,8 @@ const Navbar = () => {
 
               <ul tabIndex={0} className="dropdown-content menu p-3 bg-[#111827] text-white rounded-box shadow-lg w-64 z-50">
                 <li><Link to="/services/web-development">Website Development</Link></li>
-                <li><Link to="/services/digital-marketing">Digital Marketing</Link></li>
-                <li><Link to="/services/business-transformation">Business Transformation</Link></li>
+                <li><Link to="/services/business-digital-setup">Digital Marketing/Business Digital</Link></li>
+                <li><Link to="/services/social-media-growth">Social Media Growth</Link></li>
                 <li><Link to="/services/app-development">App Development</Link></li>
               </ul>
             </div>
