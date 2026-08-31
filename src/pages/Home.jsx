@@ -11,12 +11,12 @@ import ContactCTA from "../component/ContactCTA";
 const Home = () => {
   return (
     <>
-    <Hero />
-    <OurServices />
-    <WhyChooseUs />
-    <WorkProcess />
-    <Portfolio />
-    <ContactCTA />
+      <Hero />
+      <OurServices />
+      <WhyChooseUs />
+      <WorkProcess />
+      <Portfolio />
+      <ContactCTA />
     </>
   );
 };
