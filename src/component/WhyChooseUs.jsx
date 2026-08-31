@@ -1,59 +1,61 @@
 import React from "react";
-import { CheckCircle, Rocket, Headphones, ShieldCheck } from "lucide-react";
+import { Rocket, ShieldCheck, BadgeCheck, Headphones } from "lucide-react";
 
 const WhyChooseUs = () => {
   const reasons = [
     {
-      icon: <Rocket size={38} />,
-      title: "Professional Solutions",
-      description: "We create modern and effective digital solutions tailored to your business needs."
+      icon: <Rocket size={30} />,
+      title: "Professional Service",
+      description: "Modern solutions designed for your business growth."
     },
     {
-      icon: <ShieldCheck size={38} />,
-      title: "Quality & Reliability",
-      description: "Our focus is delivering secure, scalable and high-quality digital services."
+      icon: <ShieldCheck size={30} />,
+      title: "Quality & Trust",
+      description: "Reliable services with secure and quality results."
     },
     {
-      icon: <CheckCircle size={38} />,
-      title: "Affordable Pricing",
-      description: "Get premium digital services with flexible solutions that fit your budget."
+      icon: <BadgeCheck size={30} />,
+      title: "Affordable Price",
+      description: "Premium solutions that fit your budget."
     },
     {
-      icon: <Headphones size={38} />,
-      title: "Lifetime Support",
-      description: "We provide continuous support to help your business grow smoothly."
+      icon: <Headphones size={30} />,
+      title: "Customer Support",
+      description: "Continuous support whenever you need help."
     }
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#111827]">
-            Why Choose Us
+
+          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-[#111827]">
+            Why Choose Khan IT Solution?
           </h2>
+
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            We combine technology, creativity and support to deliver digital solutions that create real business value.
+            We provide reliable digital solutions with quality, creativity and dedicated support.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-          {reasons.map((item, index) => (
+          {reasons.map((item,index)=>(
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100"
+              className="bg-white border border-gray-200 rounded-3xl p-6 hover:shadow-xl hover:border-blue-500 transition"
             >
-              <div className="text-blue-600 mb-5">
+              <div className="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center">
                 {item.icon}
               </div>
 
-              <h3 className="text-xl font-semibold text-[#111827]">
+              <h3 className="mt-5 text-xl font-bold text-[#111827]">
                 {item.title}
               </h3>
 
-              <p className="mt-3 text-gray-600">
+              <p className="mt-3 text-gray-600 leading-relaxed">
                 {item.description}
               </p>
             </div>
