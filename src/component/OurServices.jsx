@@ -1,78 +1,83 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Code, Megaphone, Globe, Smartphone } from "lucide-react";
 
 const OurServices = () => {
   const services = [
     {
-      icon: <Code size={40} />,
-      title: "Website Design & Development",
-      description: "Modern, responsive and professional websites that help your business grow online.",
+      image: "https://i.ibb.co.com/gbtxXfSD/web-2.png",
+      title: "Website Development",
+      description: "Modern and responsive websites that help your business build a strong online presence.",
       link: "/services/web-development"
     },
     {
-      icon: <Megaphone size={40} />,
-      title: "Digital Marketing & Promotion",
-      description: "Strategic marketing campaigns to increase your brand visibility and customer reach.",
-      link: "/services/digital-marketing"
+      image: "https://i.ibb.co.com/zhc0pZm0/Business-Transform.png",
+      title: "Business Digital Setup",
+      description: "Transform your offline business into a complete digital platform and reach more customers.",
+      link: "/services/business-digital-setup"
     },
     {
-      icon: <Globe size={40} />,
-      title: "Business Online Transformation",
-      description: "Convert your offline business into a complete digital presence with our support.",
-      link: "/services/business-transformation"
+      image: "https://i.ibb.co.com/R4PsL0zP/social-meadia-growth.png",
+      title: "Social Media Growth",
+      description: "Grow your brand visibility through audience engagement and effective social strategies.",
+      link: "/services/social-media-growth"
     },
     {
-      icon: <Smartphone size={40} />,
-      title: "App Design & Development",
-      description: "Custom mobile applications designed for modern business requirements.",
+      image: "https://i.ibb.co.com/vvsJ0HxL/app-1.png",
+      title: "App Development",
+      description: "Custom mobile applications designed to improve customer experience and business growth.",
       link: "/services/app-development"
     }
   ];
 
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-14 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-3xl mx-auto mb-4 md:mb-8">
+          <h1 className="text-blue-600 md:text-2xl font-semibold">
+            OUR SERVICES
+          </h1>
 
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#111827]">
-            Our Services
+          <h2 className="mt-1 text-sm md:text-3xl font-bold text-[#111827]">
+            Digital Solutions For Your Business
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Complete digital solutions to help your business build a strong online presence.
+          <p className="mt-2 hidden md:block text-gray-600">
+            We help businesses build, grow and succeed with professional digital solutions.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-          {services.map((service, index) => (
+        <div className="grid sm:grid-cols-2 gap-4 md:gap-8">
+          {services?.map((service, index) => (
             <div
               key={index}
-              className="p-6 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-blue-500 transition duration-300"
+              className="group overflow-hidden rounded-3xl border border-gray-800 bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-300"
             >
-              <div className="text-blue-600 mb-5">
-                {service.icon}
+              <div className="md:h-64 overflow-hidden bg-gray-100">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="object-cover group-hover:scale-105 transition duration-500"
+                />
               </div>
 
-              <h3 className="text-xl font-semibold text-[#111827]">
-                {service.title}
-              </h3>
+              <div className="p-2 md:p-6">
+                <h3 className="md:text-2xl font-bold text-[#111827]">
+                  {service.title}
+                </h3>
 
-              <p className="mt-3 text-gray-600">
-                {service.description}
-              </p>
+                <p className="mt-1 md:mt-3 text-gray-600 leading-relaxed">
+                  {service.description}
+                </p>
 
-              <Link
-                to={service.link}
-                className="inline-block mt-5 text-blue-600 font-medium"
-              >
-                Learn More →
-              </Link>
+                <Link
+                  to={service.link}
+                  className="inline-block mt-2 md:mt-5 text-blue-600 font-semibold hover:text-blue-700"
+                >
+                  Explore Service →
+                </Link>
+              </div>
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   );

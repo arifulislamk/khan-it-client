@@ -1,38 +1,59 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const ContactCTA = () => {
   return (
-    <section className="bg-blue-600 py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-
-        <h2 className="text-3xl md:text-5xl font-bold text-white">
-          Ready To Grow Your Business Online?
-        </h2>
-
-        <p className="mt-5 text-blue-100 max-w-2xl mx-auto text-base md:text-lg">
-          Let's build a powerful digital presence with professional solutions
-          designed for your business growth.
-        </p>
-
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-
-          <Link
-            to="/contact"
-            className="btn bg-white text-blue-600 hover:bg-gray-100 border-none rounded-full px-8"
-          >
-            Contact Us
-          </Link>
-
-          <Link
-            to="/services"
-            className="btn btn-outline text-white border-white hover:bg-white hover:text-blue-600 rounded-full px-8"
-          >
-            Explore Services
-          </Link>
-
+    <section className="py-12 md:py-20 bg-white text-[#111827]">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 bg-gray-50 border border-gray-200 rounded-3xl shadow-lg p-4 sm:p-6 md:p-10 lg:p-14">
+          <div>
+            <p className="text-blue-600 font-semibold text-sm">CONTACT US</p>
+            <h2 className="text-3xl md:text-5xl font-bold mt-3 leading-tight">
+              Let's Build Your
+              <span className="text-blue-600"> Digital Future</span>
+            </h2>
+            <p className="mt-4 text-gray-600 text-base md:text-lg">
+              Have a project idea? Contact Khan IT Solution and get professional digital solutions for your business.
+            </p>
+            <div className="mt-7 space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                  <MapPin size={20} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm">Location</h3>
+                  <p className="text-gray-600 text-sm">Uttara, Dhaka</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                  <Phone size={20} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm">Phone</h3>
+                  <p className="text-gray-600 text-sm">01727256612</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                  <Mail size={20} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm">Email</h3>
+                  <p className="text-gray-600 text-sm">contact@khanitsolution.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form className="bg-white border border-gray-200 rounded-2xl shadow-md p-4 sm:p-6 space-y-4">
+            <input type="text" placeholder="Full Name" className="w-full h-11 px-4 rounded-xl border border-gray-300 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:border-blue-600" />
+            <input type="email" placeholder="Email Address" className="w-full h-11 px-4 rounded-xl border border-gray-300 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:border-blue-600" />
+            <textarea rows="4" placeholder="Your Message" className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:border-blue-600 resize-none" />
+            <button type="button" className="w-full h-11 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold">
+              Send Message
+            </button>
+          </form>
         </div>
-
       </div>
     </section>
   );
