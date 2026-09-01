@@ -3,6 +3,7 @@ import Navbar from '../component/Navbar';
 import Footer from '../component/Footer';
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../component/ScrollTop';
+import ButtonWhatsMess from '../component/ButtonWhatsMess';
 
 const Main = () => {
     return (
@@ -11,6 +12,7 @@ const Main = () => {
             <Navbar />
             <Outlet />
             <Footer />
+            <ButtonWhatsMess />
         </div>
     );
 };

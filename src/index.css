@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 body {
   font-family: "Inter", sans-serif;
 }
 
- @keyframes float {
-  0%,100% {
+@keyframes float {
+  0%, 100% {
     transform: translateY(0);
   }
 
@@ -32,4 +32,30 @@ body {
 
 .animate-spin-slow {
   animation: spin 15s linear infinite;
+}
+
+@keyframes arrow {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  35% {
+    opacity: 1;
+    transform: translateY(6px);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.animate-arrow {
+  animation: arrow 4s ease-in-out infinite;
 }
