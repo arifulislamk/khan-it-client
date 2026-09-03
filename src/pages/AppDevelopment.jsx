@@ -153,7 +153,7 @@ const AppDevelopment = () => {
         </div>
       </section>
 
-     <section className="bg-white px-4 py-14 sm:px-6 md:py-20">
+      <section className="bg-white px-4 py-14 sm:px-6 md:py-20">
         <div className="mx-auto max-w-5xl">
           <div className="relative overflow-hidden rounded-3xl bg-[#111827] px-6 py-10 shadow-xl md:px-12 md:py-12">
             <div className="pointer-events-none absolute -left-10 -top-10 h-32 w-32 animate-pulse rounded-full bg-blue-500/30 blur-3xl"></div>
