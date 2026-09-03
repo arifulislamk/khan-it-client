@@ -16,22 +16,22 @@ const OurServices = () => {
       link: "/services/business-digital-setup"
     },
     {
+      image: "https://i.ibb.co.com/vvsJ0HxL/app-1.png",
+      title: "App Development",
+      description: "Custom mobile applications designed to improve customer experience and business growth.",
+      link: "/services/app-development"
+    },
+    {
       image: "https://i.ibb.co.com/R4PsL0zP/social-meadia-growth.png",
       title: "Social Media Growth",
       description: "Grow your brand visibility through audience engagement and effective social strategies.",
       link: "/services/social-media-growth"
     },
-    {
-      image: "https://i.ibb.co.com/vvsJ0HxL/app-1.png",
-      title: "App Development",
-      description: "Custom mobile applications designed to improve customer experience and business growth.",
-      link: "/services/app-development"
-    }
   ];
 
   return (
     <section   id="services" className="py-14 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-4 md:mb-8">
           <h1 className="text-blue-600 md:text-2xl font-semibold">
             OUR SERVICES
@@ -45,12 +45,13 @@ const OurServices = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-8">
           {services?.map((service, index) => (
             <div
               key={index}
               className="group overflow-hidden rounded-3xl border border-gray-800 bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-300"
             >
+              <Link to={service.link}>
               <div className="md:h-64 overflow-hidden bg-gray-100">
                 <img
                   src={service.image}
@@ -59,22 +60,16 @@ const OurServices = () => {
                 />
               </div>
 
-              <div className="p-2 md:p-6">
-                <h3 className="md:text-2xl font-bold text-[#111827]">
+              <div className="p-1 md:p-6">
+                <p className=" md:text-2xl text-center font-bold text-[#111827]">
                   {service.title}
-                </h3>
-
-                <p className="mt-1 md:mt-3 text-gray-600 leading-relaxed">
-                  {service.description}
                 </p>
 
-                <Link
-                  to={service.link}
-                  className="inline-block mt-2 md:mt-5 text-blue-600 font-semibold hover:text-blue-700"
-                >
-                  Explore Service →
-                </Link>
+                <p className="mt-1 text-center md:mt-3 text-sm text-gray-600 leading-relaxed">
+                  {service.description}
+                </p>
               </div>
+              </Link>
             </div>
           ))}
         </div>
