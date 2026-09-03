@@ -5,7 +5,9 @@
 body {
   font-family: "Inter", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @keyframes float {
   0%, 100% {
     transform: translateY(0);

@@ -79,11 +79,17 @@ const WebsiteDevelopment = () => {
 
             <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
               <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-7 py-3 font-semibold text-white transition duration-300 hover:bg-blue-700"
+                to="/contact" 
+                className="group relative isolate overflow-hidden inline-flex items-center justify-center gap-2 rounded-full px-8 py-3 font-semibold text-white border border-blue-300/60 shadow-[0_10px_25px_rgba(37,99,235,0.35)] transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-[0_20px_40px_rgba(34,197,94,0.45)]"
               >
-                Get Started
-                <ArrowRight size={18} />
+                <span className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-blue-400 to-green-400"></span>
+                <span className="absolute inset-[2px] -z-10 rounded-full bg-blue-600"></span>
+                <span className="absolute -left-10 top-0 h-full w-12 -skew-x-12 bg-white/80 blur-md transition-all duration-700 group-hover:left-[120%]"></span>
+                <span className="relative">Get Started</span>
+                <ArrowRight
+                  size={18}
+                  className="relative transition-transform duration-300 group-hover:translate-x-1"
+                />
               </Link>
 
               <Link
@@ -169,8 +175,8 @@ const WebsiteDevelopment = () => {
             </h2>
 
             <p className="mt-4 text-gray-600">
-              A simple and transparent process to turn your business idea into
-              a professional online presence.
+              A simple and transparent process to turn your business idea into a
+              professional online presence.
             </p>
           </div>
 
@@ -206,22 +212,18 @@ const WebsiteDevelopment = () => {
               <div className="text-center md:text-left">
                 <div className="flex items-center justify-center gap-2 text-blue-400 md:justify-start">
                   <CheckCircle2 size={19} />
-
                   <span className="text-sm font-semibold tracking-wide">
                     READY TO GET STARTED?
                   </span>
                 </div>
-
                 <h2 className="mt-3 text-2xl font-bold text-white md:text-3xl">
                   Take Your Business Online
                 </h2>
-
                 <p className="mt-3 max-w-xl text-gray-400">
                   Let's build a professional website that helps your business
                   grow and reach more customers.
                 </p>
               </div>
-
               <Link
                 to="/contact"
                 className="group relative isolate shrink-0 overflow-hidden rounded-full border border-blue-300/60 px-8 py-3 font-semibold text-white shadow-[0_0_20px_rgba(59,130,246,0.35)] transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,197,94,0.45)]"

@@ -42,7 +42,7 @@ const ContactCTA = () => {
       });
   };
   return (
-    <section className="py-12 md:py-20 bg-white text-[#111827]">
+    <section id="contact" className="py-12 md:py-20 bg-white text-[#111827]">
       <div className="max-w-7xl mx-auto px-3 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 bg-gray-50 border border-gray-200 rounded-3xl shadow-lg p-4 sm:p-6 md:p-10 lg:p-14">
           <div>
@@ -119,9 +119,15 @@ const ContactCTA = () => {
             />
             <button
               type="submit"
-              className="w-full h-11 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold"
+              className="group relative isolate overflow-hidden w-full h-12 rounded-xl font-semibold text-white border border-blue-300/60 shadow-[0_10px_25px_rgba(37,99,235,0.35)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_20px_35px_rgba(34,197,94,0.35)]"
             >
-              Send Message
+              <span className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-blue-400 to-green-400"></span>
+
+              <span className="absolute inset-[2px] -z-10 rounded-xl bg-blue-600"></span>
+
+              <span className="absolute -left-10 top-0 h-full w-12 -skew-x-12 bg-white/80 blur-md transition-all duration-700 group-hover:left-[120%]"></span>
+
+              <span className="relative">Send Message</span>
             </button>
           </form>
         </div>

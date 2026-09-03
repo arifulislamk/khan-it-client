@@ -63,10 +63,6 @@ const About = () => {
               We combine creativity, technology and strategy to create digital
               solutions that bring real value to businesses.
             </p>
-
-            <button className="mt-6 btn bg-blue-600 hover:bg-blue-700 text-white border-none rounded-full px-7">
-              Learn More
-            </button>
           </div>
 
           <div className="space-y-6">

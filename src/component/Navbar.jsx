@@ -225,11 +225,8 @@ const Navbar = () => {
           className="group relative isolate overflow-hidden rounded-full border border-blue-300/60 px-5 py-2 font-semibold text-white shadow-[0_0_15px_rgba(59,130,246,0.35)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,0.55)]"
         >
           <span className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-blue-400 to-green-400"></span>
-
           <span className="absolute -left-10 top-0 h-full w-12 -skew-x-12 bg-white/80 blur-md transition-all duration-700 group-hover:left-[120%]"></span>
-
           <span className="absolute inset-[2px] -z-10 rounded-full bg-blue-600"></span>
-
           <span className="relative">
             Get Quote
           </span>
