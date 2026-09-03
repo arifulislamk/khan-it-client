@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Reveal from "../component/Revel";
 
 const OurServices = () => {
   const services = [
@@ -50,7 +51,7 @@ const OurServices = () => {
             <div
               key={index}
               className="group overflow-hidden rounded-3xl border border-gray-800 bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-300"
-            >
+            ><Reveal direction="left">
               <Link to={service.link}>
               <div className="md:h-64 overflow-hidden bg-gray-100">
                 <img
@@ -69,7 +70,7 @@ const OurServices = () => {
                   {service.description}
                 </p>
               </div>
-              </Link>
+              </Link></Reveal>
             </div>
           ))}
         </div>

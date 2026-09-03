@@ -2,62 +2,78 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-body {
-  font-family: "Inter", sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-}
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-15px);
-  }
+body{
+font-family:"Inter",sans-serif;
+background:white;
 }
 
-.animate-float {
-  animation: float 4s ease-in-out infinite;
+html{
+scroll-behavior:smooth;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-15px);
+}
 }
 
-.animate-spin-slow {
-  animation: spin 15s linear infinite;
+.animate-float{
+animation:float 4s ease-in-out infinite;
 }
 
-@keyframes arrow {
-  0%, 100% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  15% {
-    opacity: 1;
-    transform: translateY(-2px);
-  }
-
-  35% {
-    opacity: 1;
-    transform: translateY(6px);
-  }
-
-  50% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
+@keyframes spin{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
 }
 
-.animate-arrow {
-  animation: arrow 4s ease-in-out infinite;
+.animate-spin-slow{
+animation:spin 15s linear infinite;
+}
+
+@keyframes arrow{
+0%,100%{
+opacity:0;
+transform:translateY(-10px);
+}
+15%{
+opacity:1;
+transform:translateY(-2px);
+}
+35%{
+opacity:1;
+transform:translateY(6px);
+}
+50%{
+opacity:0;
+transform:translateY(10px);
+}
+}
+
+.animate-arrow{
+animation:arrow 4s ease-in-out infinite;
+}
+
+.reveal{
+opacity:0 !important;
+transition:opacity 2s ease,transform 4s cubic-bezier(0.16,1,0.3,1) !important;
+}
+
+.reveal[data-direction="left"]{
+transform:translateX(-120px) !important;
+}
+
+.reveal[data-direction="right"]{
+transform:translateX(120px) !important;
+}
+
+.reveal.show{
+opacity:1 !important;
+transform:translateX(0) !important;
 }
