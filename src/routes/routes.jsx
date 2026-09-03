@@ -8,6 +8,7 @@ import AppDevelopment from '../pages/AppDevelopment';
 import BusinessDigital from '../pages/BusinessDigital.jsx';
 import SocialMediaGrowth from '../pages/SocialMediaGrowth.jsx';
 import ContactCTA from '../component/ContactCTA.jsx';
+import PortfolioPurchase from '../pages/PortfolioPurchase.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         {
           path: "/services/social-media-growth",
           element: <SocialMediaGrowth />,
+        },
+        {
+          path: "/services/portfolio-purchase",
+          element: <PortfolioPurchase />,
         },
         {
           path: "/contact",

@@ -197,6 +197,15 @@ const Navbar = () => {
                     App Development
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink
+                    to="/services/portfolio-purchase"
+                    className={serviceLinkClass}
+                    onClick={() => setOpen(false)}
+                  >
+                    Portfolio Purchase
+                  </NavLink>
+                </li>
 
               </ul>
             )}
