@@ -10,8 +10,8 @@ const ContactCTA = () => {
     const number = e.target.number.value;
     const email = e.target.email.value;
     const message = e.target.message.value;
-    console.log(name, number, email, message);
-    // const client = { name, number, email, message };
+    // console.log(name, number, email, message);
+    const client = { name, number, email, message };
     fetch(`${import.meta.env.VITE_URL}/client`, {
       method: "POST",
       headers: {

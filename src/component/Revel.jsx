@@ -1,6 +1,6 @@
 import React,{useEffect,useRef}from"react";
 
-const Reveal=({children,direction="left"})=>{
+const Revel=({children,direction="left"})=>{
 const ref=useRef(null);
 
 useEffect(()=>{
@@ -23,11 +23,11 @@ return(
 <div
 ref={ref}
 data-direction={direction}
-className="reveal"
+className="revel"
 >
 {children}
 </div>
 );
 };
 
-export default Reveal;
+export default Revel;

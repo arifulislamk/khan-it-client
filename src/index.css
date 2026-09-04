@@ -5,10 +5,13 @@
 body{
 font-family:"Inter",sans-serif;
 background:white;
+margin:0;
+overflow-x:hidden;
 }
 
 html{
 scroll-behavior:smooth;
+overflow-x:hidden;
 }
 
 @keyframes float{
@@ -60,20 +63,36 @@ transform:translateY(10px);
 animation:arrow 4s ease-in-out infinite;
 }
 
-.reveal{
-opacity:0 !important;
-transition:opacity 2s ease,transform 2.5s cubic-bezier(0.16,1,0.3,1) !important;
+.revel{
+opacity:0;
+transition:opacity 2s ease,transform 2s cubic-bezier(0.16,1,0.3,1);
 }
 
-.reveal[data-direction="left"]{
-transform:translateX(-120px) !important;
+.revel[data-direction="left"]{
+transform:translateX(-100px);
 }
 
-.reveal[data-direction="right"]{
-transform:translateX(120px) !important;
+.revel[data-direction="right"]{
+transform:translateX(100px);
 }
 
-.reveal.show{
-opacity:1 !important;
-transform:translateX(0) !important;
+.revel.show{
+opacity:1;
+transform:translateX(0);
+}
+
+@media(max-width:640px){
+
+.revel[data-direction="left"]{
+transform:translateX(-40px);
+}
+
+.revel[data-direction="right"]{
+transform:translateX(40px);
+}
+
+.revel.show{
+transform:translateX(0);
+}
+
 }

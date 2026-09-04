@@ -5,25 +5,25 @@ import Reveal from "../component/Revel";
 const OurServices = () => {
   const services = [
     {
-      image: "https://i.ibb.co.com/gbtxXfSD/web-2.png",
+      image: "https://i.ibb.co.com/3mPTLyC8/web1-1.png",
       title: "Website Development",
       description: "Modern and responsive websites that help your business build a strong online presence.",
       link: "/services/web-development"
     },
     {
-      image: "https://i.ibb.co.com/zhc0pZm0/Business-Transform.png",
+      image: "https://i.ibb.co.com/1tkJYMC6/Business-Transform-1.png",
       title: "Business Digital Setup",
       description: "Transform your offline business into a complete digital platform and reach more customers.",
       link: "/services/business-digital-setup"
     },
     {
-      image: "https://i.ibb.co.com/vvsJ0HxL/app-1.png",
+      image: "https://i.ibb.co.com/NgF13Wpf/app-1-1.png",
       title: "App Development",
       description: "Custom mobile applications designed to improve customer experience and business growth.",
       link: "/services/app-development"
     },
     {
-      image: "https://i.ibb.co.com/R4PsL0zP/social-meadia-growth.png",
+      image: "https://i.ibb.co.com/Kzp5hDmD/social-meadia-growth-1.png",
       title: "Social Media Growth",
       description: "Grow your brand visibility through audience engagement and effective social strategies.",
       link: "/services/social-media-growth"
