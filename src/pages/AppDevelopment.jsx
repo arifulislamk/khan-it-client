@@ -74,7 +74,7 @@ const AppDevelopment = () => {
               <div className="relative group">
                 <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full group-hover:bg-blue-500/30 transition"></div>
                 <img
-                  src="https://i.ibb.co.com/vvsJ0HxL/app-1.png"
+                  src="https://i.ibb.co.com/NgF13Wpf/app-1-1.png"
                   alt="App Development"
                   className="relative w-full max-w-md rounded-3xl shadow-2xl transition duration-500 group-hover:scale-105"
                 />

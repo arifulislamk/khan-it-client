@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../assets/nabvar.png";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -111,7 +110,7 @@ const Navbar = () => {
 
         <NavLink to="/">
           <img
-            src={logo}
+            src="https://i.ibb.co.com/dwYYXLZF/nabvar-1-1.png"
             alt="Khan IT Solution"
             className="w-20 sm:w-24 md:w-28 lg:w-32 object-contain"
           />

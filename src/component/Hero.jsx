@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo1 from "../assets/logo.png";
 import { ArrowRight } from "lucide-react";
 
 const Hero=()=>{
@@ -58,7 +57,7 @@ className="group relative isolate overflow-hidden inline-flex items-center justi
 <div className="absolute w-[75%] h-[75%] rounded-full bg-blue-50 border border-blue-100"></div>
 
 <div className="relative w-28 h-28 sm:w-44 sm:h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-white rounded-3xl flex items-center justify-center border border-gray-100 animate-float shadow-[0_30px_60px_rgba(37,99,235,0.25)] hover:scale-105 transition duration-500">
-<img src={logo1} alt="Khan IT Solution" className="w-20 sm:w-32 md:w-44 lg:w-48 object-contain drop-shadow-xl"/>
+<img src="https://i.ibb.co.com/kVQZrxyL/logo-1-1.png" alt="Khan IT Solution" className="w-20 sm:w-32 md:w-44 lg:w-48 object-contain drop-shadow-xl"/>
 </div>
 
 <div className="absolute bottom-0 sm:bottom-4 w-36 sm:w-52 h-5 bg-blue-300/30 blur-xl rounded-full"></div>

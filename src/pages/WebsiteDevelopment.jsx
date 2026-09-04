@@ -106,8 +106,8 @@ const WebsiteDevelopment = () => {
               <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-3xl"></div>
 
               <img
-                src="https://i.ibb.co.com/gbtxXfSD/web-2.png"
-                alt="Website Development"
+                src="https://i.ibb.co.com/3mPTLyC8/web1-1.png"
+                alt="Website Development Image"
                 className="relative w-full rounded-3xl shadow-2xl"
               />
 
