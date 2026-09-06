@@ -43,7 +43,7 @@ const WorkProcess = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-blue-500 hover:shadow-lg transition"
+              className="relative flex flex-col justify-center items-center text-center bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-blue-500 hover:shadow-lg hover:-translate-y-2 duration-300 transition"
             >
               <div className="text-blue-600 mb-5">
                 {step.icon}

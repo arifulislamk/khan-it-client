@@ -42,7 +42,7 @@ const ContactCTA = () => {
       });
   };
   return (
-    <section id="contact" className="py-12 md:py-20 bg-white text-[#111827]">
+    <section id="contact" className="py-2 md:py-20 bg-white text-[#111827]">
       <div className="max-w-7xl mx-auto px-3 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 bg-gray-50 border border-gray-200 rounded-3xl shadow-lg p-4 sm:p-6 md:p-10 lg:p-14">
           <div>
