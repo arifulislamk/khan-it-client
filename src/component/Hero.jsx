@@ -19,7 +19,7 @@ Khan IT Solution provides professional digital solutions including website devel
 <div className="mt-7 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
 
 <a
-href="#contact"
+href="/contact"
 className="group relative isolate overflow-hidden inline-flex items-center justify-center gap-2 rounded-full px-8 py-3 font-semibold text-white border border-blue-300/60 shadow-[0_10px_25px_rgba(37,99,235,0.35)] transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-[0_20px_40px_rgba(34,197,94,0.45)]"
 >
 <span className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-blue-400 to-green-400"></span>
