@@ -58,7 +58,7 @@ return(
 </ul>
 )}
 </li>
-<li><NavLink to="/portfolio" className={navLinkClass}>Portfolio</NavLink></li>
+{/* <li><NavLink to="/portfolio" className={navLinkClass}>Portfolio</NavLink></li> */}
 <li><NavLink to="/contact" className={navLinkClass}>Contact</NavLink></li>
 <li><NavLink to="/contact" className="btn bg-blue-600 hover:bg-blue-700 text-white border-none mt-2">Get Quote</NavLink></li>
 </ul>
@@ -83,7 +83,7 @@ return(
 </ul>
 )}
 </li>
-<li><NavLink to="/portfolio" className={navLinkClass}>Portfolio</NavLink></li>
+{/* <li><NavLink to="/portfolio" className={navLinkClass}>Portfolio</NavLink></li> */}
 <li><NavLink to="/contact" className={navLinkClass}>Contact</NavLink></li>
 </ul>
 </div>
