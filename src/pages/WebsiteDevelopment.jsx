@@ -61,34 +61,39 @@ const WebsiteDevelopment = () => {
     <div className="bg-white text-[#111827]">
       <Reveal direction="left">
         <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-white py-16 md:py-24">
-          <div className="absolute -right-32 -top-32 h-72 w-72 rounded-full bg-blue-100/60 blur-3xl"></div>
+          <div className="absolute -right-32 -top-32 h-72 w-72 rounded-full bg-blue-100/60 blur-3xl" />
+
           <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
             <div className="text-center lg:text-left">
               <p className="text-sm font-semibold tracking-wider text-blue-600">
                 WEBSITE DEVELOPMENT
               </p>
+
               <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
                 Professional Website For Your
                 <span className="text-blue-600"> Business</span>
               </h1>
+
               <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-gray-600 md:text-lg lg:mx-0">
                 We create modern, responsive and professional websites that help
                 your business build trust, attract customers and grow online.
               </p>
+
               <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
                 <Link
                   to="/contact"
-                  className="group relative isolate overflow-hidden inline-flex items-center justify-center gap-2 rounded-full px-8 py-3 font-semibold text-white border border-blue-300/60 shadow-[0_10px_25px_rgba(37,99,235,0.35)] transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-[0_20px_40px_rgba(34,197,94,0.45)]"
+                  className="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-full border border-blue-300/60 px-8 py-3 font-semibold text-white shadow-[0_10px_25px_rgba(37,99,235,0.35)] transition-all duration-300 hover:-translate-y-2 hover:scale-105"
                 >
-                  <span className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-blue-400 to-green-400"></span>
-                  <span className="absolute inset-[2px] -z-10 rounded-full bg-blue-600"></span>
-                  <span className="absolute -left-10 top-0 h-full w-12 -skew-x-12 bg-white/80 blur-md transition-all duration-700 group-hover:left-[120%]"></span>
+                  <span className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-blue-400 to-green-400" />
+                  <span className="absolute inset-[2px] -z-10 rounded-full bg-blue-600" />
+                  <span className="absolute -left-10 top-0 h-full w-12 -skew-x-12 bg-white/80 blur-md transition-all duration-700 group-hover:left-[120%]" />
                   <span className="relative">Get Started</span>
                   <ArrowRight
                     size={18}
                     className="relative transition-transform duration-300 group-hover:translate-x-1"
                   />
                 </Link>
+
                 <Link
                   to="/portfolio"
                   className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-7 py-3 font-semibold text-gray-700 transition duration-300 hover:border-blue-600 hover:text-blue-600"
@@ -97,14 +102,17 @@ const WebsiteDevelopment = () => {
                 </Link>
               </div>
             </div>
+
             <div className="flex justify-center">
               <div className="relative w-full max-w-md">
-                <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-3xl"></div>
+                <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-3xl" />
+
                 <img
                   src="https://i.ibb.co.com/3mPTLyC8/web1-1.png"
                   alt="Website Development Image"
                   className="relative w-full rounded-3xl shadow-2xl"
                 />
+
                 <div className="absolute -bottom-5 left-4 rounded-2xl border border-gray-200 bg-white px-5 py-3 shadow-xl sm:left-6">
                   <p className="text-sm font-semibold text-gray-800">
                     Modern Website Solution
@@ -134,6 +142,7 @@ const WebsiteDevelopment = () => {
                 smoothly and support your business goals.
               </p>
             </div>
+
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {features.map((item, index) => (
                 <div
@@ -169,6 +178,7 @@ const WebsiteDevelopment = () => {
                 a professional online presence.
               </p>
             </div>
+
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {steps.map((step, index) => (
                 <div
@@ -190,11 +200,173 @@ const WebsiteDevelopment = () => {
       </Reveal>
 
       <Reveal direction="right">
+        <section className="bg-white py-16 md:py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="mx-auto mb-12 max-w-2xl text-center">
+              <p className="text-sm font-semibold tracking-wider text-blue-600">
+                PRICING PLANS
+              </p>
+              <h2 className="mt-2 text-3xl font-bold md:text-4xl">
+                Simple Pricing For Every Business
+              </h2>
+              <p className="mt-4 text-gray-600">
+                Choose a package that fits your business needs and budget.
+              </p>
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-3">
+              <div className="flex flex-col rounded-3xl border border-gray-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-300 hover:shadow-xl">
+                <span className="w-fit rounded-full bg-blue-50 px-4 py-1.5 text-sm font-semibold text-blue-600">
+                  Starter
+                </span>
+
+                <h3 className="mt-5 text-2xl font-bold">Landing Page</h3>
+
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  Perfect for small businesses, personal brands and
+                  promotional campaigns.
+                </p>
+
+                <div className="mt-6">
+                  <span className="text-4xl font-bold text-gray-900">
+                    ৳5,000
+                  </span>
+                  <span className="ml-2 text-sm text-gray-500">
+                    / project
+                  </span>
+                </div>
+
+                <div className="my-6 h-px bg-gray-100" />
+
+                <ul className="space-y-3 text-sm text-gray-600">
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />1 Professional Landing Page</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Modern & Responsive Design</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Mobile, Tablet & Desktop Support</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Contact / Inquiry Form</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Basic SEO Setup</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Social Media Integration</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Free Deployment</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />12 Months Support</li>
+                </ul>
+
+                <Link
+                  to="/contact"
+                  className="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-blue-600 px-6 py-3 font-semibold text-blue-600 transition hover:bg-blue-600 hover:text-white"
+                >
+                  Get Started
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
+
+              <div className="relative flex flex-col rounded-3xl border-2 border-blue-600 bg-white p-7 shadow-xl transition duration-300 hover:-translate-y-2">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <span className="rounded-full bg-blue-600 px-5 py-2 text-xs font-bold uppercase tracking-wide text-white shadow-lg">
+                    Most Popular
+                  </span>
+                </div>
+
+                <span className="w-fit rounded-full bg-blue-50 px-4 py-1.5 text-sm font-semibold text-blue-600">
+                  Business
+                </span>
+
+                <h3 className="mt-5 text-2xl font-bold">Business Website</h3>
+
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  A complete website solution for growing businesses.
+                </p>
+
+                <div className="mt-6">
+                  <span className="text-4xl font-bold text-gray-900">
+                    ৳15,000
+                  </span>
+                  <span className="ml-2 text-sm text-gray-500">
+                    / project
+                  </span>
+                </div>
+
+                <div className="my-6 h-px bg-gray-100" />
+
+                <ul className="space-y-3 text-sm text-gray-600">
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Up to 8–10 Professional Pages</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Custom Modern UI/UX Design</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Fully Responsive Website</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Contact & Inquiry System</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Admin Dashboard</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Up to 2 Dashboard/Login Systems</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Basic Content Management</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />SEO & Speed Optimization</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />Free Deployment</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-600" />2 Years Support</li>
+                </ul>
+
+                <Link
+                  to="/contact"
+                  className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-1 hover:bg-blue-700"
+                >
+                  Choose Business
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
+
+              <div className="flex flex-col rounded-3xl bg-[#111827] p-7 text-white shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <span className="w-fit rounded-full bg-blue-500/10 px-4 py-1.5 text-sm font-semibold text-blue-400">
+                  Professional
+                </span>
+
+                <h3 className="mt-5 text-2xl font-bold">Advanced Solution</h3>
+
+                <p className="mt-2 text-sm leading-relaxed text-gray-400">
+                  Advanced custom systems for businesses with complex needs.
+                </p>
+
+                <div className="mt-6">
+                  <span className="text-4xl font-bold">৳50,000</span>
+                  <span className="ml-2 text-sm text-gray-400">
+                    / project
+                  </span>
+                </div>
+
+                <div className="my-6 h-px bg-gray-700" />
+
+                <ul className="space-y-3 text-sm text-gray-300">
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Fully Custom Website & System</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Unlimited Pages & Sections</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Premium UI/UX Design</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Secure Authentication System</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Unlimited Dashboard Management</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Multiple User Roles & Permissions</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Advanced Admin Panel</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Database & API Integration</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Performance & Security Optimization</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Priority Support</li>
+                  <li className="flex gap-3"><CheckCircle2 size={18} className="shrink-0 text-blue-400" />Long-Term Support</li>
+                </ul>
+
+                <Link
+                  to="/contact"
+                  className="mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-blue-500 bg-blue-500/10 px-6 py-3 font-semibold text-white transition hover:bg-blue-600"
+                >
+                  Discuss Your Project
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
+            </div>
+
+            <p className="mt-8 text-center text-sm text-gray-500">
+              Final pricing may vary depending on project requirements and
+              customization.
+            </p>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal direction="right">
         <section className="bg-white px-4 py-14 sm:px-6 md:py-20">
           <div className="mx-auto max-w-5xl">
             <div className="relative overflow-hidden rounded-3xl bg-[#111827] px-6 py-10 shadow-xl md:px-12 md:py-12">
-              <div className="pointer-events-none absolute -left-10 -top-10 h-32 w-32 animate-pulse rounded-full bg-blue-500/30 blur-3xl"></div>
-              <div className="pointer-events-none absolute -bottom-10 -right-10 h-32 w-32 animate-pulse rounded-full bg-green-400/30 blur-3xl"></div>
+              <div className="pointer-events-none absolute -left-10 -top-10 h-32 w-32 animate-pulse rounded-full bg-blue-500/30 blur-3xl" />
+              <div className="pointer-events-none absolute -bottom-10 -right-10 h-32 w-32 animate-pulse rounded-full bg-green-400/30 blur-3xl" />
+
               <div className="relative flex flex-col items-center justify-between gap-8 md:flex-row">
                 <div className="text-center md:text-left">
                   <div className="flex items-center justify-center gap-2 text-blue-400 md:justify-start">
@@ -203,21 +375,25 @@ const WebsiteDevelopment = () => {
                       READY TO GET STARTED?
                     </span>
                   </div>
+
                   <h2 className="mt-3 text-2xl font-bold text-white md:text-3xl">
                     Take Your Business Online
                   </h2>
+
                   <p className="mt-3 max-w-xl text-gray-400">
                     Let's build a professional website that helps your business
                     grow and reach more customers.
                   </p>
                 </div>
+
                 <Link
                   to="/contact"
                   className="group relative isolate shrink-0 overflow-hidden rounded-full border border-blue-300/60 px-8 py-3 font-semibold text-white shadow-[0_0_20px_rgba(59,130,246,0.35)] transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,197,94,0.45)]"
                 >
-                  <span className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-blue-400 to-green-400"></span>
-                  <span className="absolute -left-10 top-0 h-full w-16 -skew-x-12 bg-white/70 blur-md transition duration-700 group-hover:left-[120%]"></span>
-                  <span className="absolute inset-[2px] -z-10 rounded-full bg-[#111827]"></span>
+                  <span className="absolute inset-0 -z-20 bg-gradient-to-r from-white via-blue-400 to-green-400" />
+                  <span className="absolute -left-10 top-0 h-full w-16 -skew-x-12 bg-white/70 blur-md transition duration-700 group-hover:left-[120%]" />
+                  <span className="absolute inset-[2px] -z-10 rounded-full bg-[#111827]" />
+
                   <span className="relative flex items-center gap-2">
                     Contact Us
                     <ArrowRight
