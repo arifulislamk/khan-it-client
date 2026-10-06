@@ -58,14 +58,46 @@ const WebsiteDevelopment = () => {
   ];
 
   const works = [
-    ["https://i.ibb.co.com/k2TB4PfD/Whats-App-Image-2026-09-26-at-19-24-24-1.jpg", "Portfolio Website", "Portfolio"],
-    ["https://i.ibb.co.com/mVcKwvgk/Whats-App-Image-2026-09-26-at-19-24-24-2.jpg", "Tourism Website", "Travel & Tourism"],
-    ["https://i.ibb.co.com/rfRQnVrX/Whats-App-Image-2026-09-26-at-19-24-24-3.jpg", "Business Website", "Business"],
-    ["https://i.ibb.co.com/GQgDs63P/Whats-App-Image-2026-09-26-at-19-24-24-4.jpg", "E-commerce Website", "Online Store"],
-    ["https://i.ibb.co.com/nN45kmch/Whats-App-Image-2026-09-26-at-19-24-24-5.jpg", "Business Website", "Business"],
-    ["https://i.ibb.co.com/nq2fs4XL/Whats-App-Image-2026-09-26-at-19-24-24-6.jpg", "Mobile Shop Website", "E-commerce"],
-    ["https://i.ibb.co.com/svpHYCFF/Whats-App-Image-2026-09-26-at-19-24-24-7.jpg", "Web Application", "Web Application"],
-    ["https://i.ibb.co.com/TMfMs00X/Whats-App-Image-2026-09-26-at-19-24-24-8.jpg", "Food Website", "Food & Restaurant"],
+    [
+      "https://i.ibb.co.com/k2TB4PfD/Whats-App-Image-2026-09-26-at-19-24-24-1.jpg",
+      "Portfolio Website",
+      "Portfolio",
+    ],
+    [
+      "https://i.ibb.co.com/mVcKwvgk/Whats-App-Image-2026-09-26-at-19-24-24-2.jpg",
+      "Tourism Website",
+      "Travel & Tourism",
+    ],
+    [
+      "https://i.ibb.co.com/rfRQnVrX/Whats-App-Image-2026-09-26-at-19-24-24-3.jpg",
+      "Business Website",
+      "Business",
+    ],
+    [
+      "https://i.ibb.co.com/GQgDs63P/Whats-App-Image-2026-09-26-at-19-24-24-4.jpg",
+      "E-commerce Website",
+      "Online Store",
+    ],
+    [
+      "https://i.ibb.co.com/nN45kmch/Whats-App-Image-2026-09-26-at-19-24-24-5.jpg",
+      "Business Website",
+      "Business",
+    ],
+    [
+      "https://i.ibb.co.com/nq2fs4XL/Whats-App-Image-2026-09-26-at-19-24-24-6.jpg",
+      "Mobile Shop Website",
+      "E-commerce",
+    ],
+    [
+      "https://i.ibb.co.com/svpHYCFF/Whats-App-Image-2026-09-26-at-19-24-24-7.jpg",
+      "Web Application",
+      "Web Application",
+    ],
+    [
+      "https://i.ibb.co.com/TMfMs00X/Whats-App-Image-2026-09-26-at-19-24-24-8.jpg",
+      "Food Website",
+      "Food & Restaurant",
+    ],
   ];
 
   const plans = [
@@ -130,7 +162,9 @@ const WebsiteDevelopment = () => {
   ];
 
   const List = ({ items, dark }) => (
-    <ul className={`flex-1 space-y-3 text-sm ${dark ? "text-gray-300" : "text-gray-600"}`}>
+    <ul
+      className={`flex-1 space-y-3 text-sm ${dark ? "text-gray-300" : "text-gray-600"}`}
+    >
       {items.map((item, i) => (
         <li key={i} className="flex items-start gap-3">
           <CheckCircle2
@@ -145,7 +179,6 @@ const WebsiteDevelopment = () => {
 
   return (
     <div className="w-full overflow-x-hidden bg-white text-[#111827]">
-
       <Revel direction="left">
         <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-white py-10 sm:py-14 md:py-24">
           <div className="absolute -right-32 -top-32 h-64 w-64 rounded-full bg-blue-100/60 blur-3xl" />
@@ -162,9 +195,8 @@ const WebsiteDevelopment = () => {
               </h1>
 
               <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-gray-600 sm:mt-6 sm:text-base md:text-lg lg:mx-0">
-                We create modern, responsive and professional websites that
-                help your business build trust, attract customers and grow
-                online.
+                We create modern, responsive and professional websites that help
+                your business build trust, attract customers and grow online.
               </p>
 
               <div className="mt-6 flex w-full flex-col gap-3 sm:mt-8 sm:flex-row sm:justify-center lg:justify-start">
@@ -308,8 +340,8 @@ const WebsiteDevelopment = () => {
               </h2>
 
               <p className="mt-3 text-sm leading-relaxed text-gray-600 sm:text-base">
-                A simple and transparent process to turn your business idea
-                into a professional online presence.
+                A simple and transparent process to turn your business idea into
+                a professional online presence.
               </p>
             </div>
 
@@ -418,14 +450,14 @@ const WebsiteDevelopment = () => {
 
                   <Link
                     to={`/contact?service=website-development&plan=${encodeURIComponent(
-                      p.name
+                      p.name,
                     )}`}
                     className={`mt-8 inline-flex min-h-12 w-full shrink-0 items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition sm:text-base ${
                       p.dark
                         ? "border border-blue-500 bg-blue-500/10 text-white hover:bg-blue-600"
                         : p.popular
-                        ? "bg-blue-600 text-white hover:bg-blue-700"
-                        : "border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                          ? "bg-blue-600 text-white hover:bg-blue-700"
+                          : "border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                     }`}
                   >
                     {p.button}
@@ -465,8 +497,8 @@ const WebsiteDevelopment = () => {
                   </h2>
 
                   <p className="mt-3 text-sm leading-relaxed text-gray-400 sm:text-base">
-                    Let's build a professional website that helps your
-                    business grow and reach more customers.
+                    Let's build a professional website that helps your business
+                    grow and reach more customers.
                   </p>
                 </div>
 
@@ -487,7 +519,6 @@ const WebsiteDevelopment = () => {
           </div>
         </section>
       </Revel>
-
     </div>
   );
 };
