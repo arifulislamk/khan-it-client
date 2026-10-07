@@ -126,7 +126,7 @@ const ContactCTA = () => {
                 <div>
                   <h3 className="text-sm font-semibold">Email</h3>
                   <p className="text-sm text-gray-600">
-                    contact@khanitsolution.com
+                    ariful18374@gmail.com
                   </p>
                 </div>
               </div>
